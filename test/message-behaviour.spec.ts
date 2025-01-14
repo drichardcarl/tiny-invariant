@@ -15,7 +15,7 @@ it('should include a provided message when an invariant does throw', () => {
     invariant(false, 'my message');
   } catch (e) {
     invariant(e instanceof Error);
-    expect(e.message).toEqual('Invariant failed: my message');
+    expect(e.message).toEqual('my message');
   }
 });
 
@@ -32,6 +32,6 @@ it('should execute a message function if the invariant does throw', () => {
   } catch (e) {
     invariant(e instanceof Error);
     expect(message).toHaveBeenCalled();
-    expect(e.message).toEqual('Invariant failed: lazy message');
+    expect(e.message).toEqual('lazy message');
   }
 });

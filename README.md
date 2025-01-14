@@ -1,5 +1,13 @@
 # tiny-invariant 🔬💥
 
+**This package is a modified version of the original [`tiny-invariant`](https://www.npmjs.com/package/tiny-invariant)**
+- Error messages are not stripped on all `NODE_ENV`s
+- When exception is thrown and if error message is not provided, it defaults to "Invariant failed"
+- Thrown error messages are not prefixed with "Invariant failed", it's just either the provided message or "Invariant failed"
+
+*All credits to the original creator(s) of this library*
+
+
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/alexreardon/tiny-invariant/test.yml)
 ![types](https://img.shields.io/badge/types-typescript%20%7C%20flow-blueviolet)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/tiny-invariant)
